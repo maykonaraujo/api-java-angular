@@ -28,7 +28,7 @@ public class ClientesController {
         return cliente;
     }
 
-    @@GetMapping("/clientes/{id}.json")
+    @GetMapping("/clientes/{id}.json")
     public Cliente create(@PathVariable int id) {
         var cliente = buscaPorId(id);
 
@@ -55,5 +55,6 @@ public class ClientesController {
         }
         return cliente;
     }
+}
 
 
